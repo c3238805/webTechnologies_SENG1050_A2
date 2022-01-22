@@ -1,0 +1,141 @@
+/*Assignment 2*/
+/*SENG1050*/
+/*NI ZENG*/
+/*C3238805*/
+/*CREATE: 30/10/2020*/
+/*DUE 1/11/2020*/
+
+body, html{color:black;background-image:url("images/art-backgrounds.jpg" );font-family:Arial;font-size:15px;line-height:1.5;margin-left:1cm;margin-right:1cm;background-size: contain;}
+h1{background-image: url("images/head_backgroud.jpg" );}
+
+hr{border-width:medium;border-color:pink;border-top:1px;}
+img {opacity: 0.8;}
+img:hover {opacity: 1.0;}
+
+h1 {color:white;font-size:40px;text-align: center;font-family:Arial;font-weight:800}
+h2 {font-size:25px;font-family:Arial;font-weight:600;margin:10px 0;text-transform:uppercase;}
+div{text-align: center;font-family:Times New Roman;font-weight:400}
+span {font-size:20px;font-family:Times;font-weight:500}
+footer {
+        position: relative;
+        height: 300px;
+        width: 100%;        
+    }
+aside {float:right; width:30%;margin:30px}
+nav {font-size:25px; }
+nav a:hover {font-size: 120%; color:purple}
+
+.xml_link {float:right;}
+.menu {background-color:lightpink ;padding-left:1cm;padding-right:1cm;}
+.top_background {background-image: url("images/main_background.jpg" );color:white;}
+.welcome {font-size:35px;text-align: center;margin:0.2cm; padding: 0.5cm}
+
+
+/* insert text to relavent pictures */
+
+.luxury .box{
+		
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }
+
+.luxury .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0;
+        left: 0;
+        right: 1cm;
+        top: 0; /* Adjust this value to move the positioned div up and down */
+        text-align: left;
+        width: 3cm; /* Set the width of the positioned div */
+		background-color:black;
+		color:#fff;
+		padding-left:0.5cm;
+		padding-right:0.5cm;
+		;
+    }
+	
+.cruise .box{
+		
+        position: relative;
+        display: inline-block; /* Make the width of box same as image */
+    }	
+	
+.cruise .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0;
+        left: 0;
+        right: 1cm;
+        top: 0; /* Adjust this value to move the positioned div up and down */
+        text-align: left;
+        width: 4cm; /* Set the width of the positioned div */
+		background-color:black;
+		color:#fff;
+		padding-left:0.5cm;
+		padding-right:0.5cm;
+		;
+    }
+
+/*set background image for selected area. */	
+.background{background-image: url("images/main_background.jpg" );border: 5px solid black;padding:0.5cm 0.5cm}
+/*make the text visiable on the selected background.*/
+.transbox{background-color: #ffffff;margin:0.5cm;opacity: 0.6;padding-left:50px;padding-right:50px ;padding-top:20px}
+	
+/*Make all list looks different then other text.*/	
+.list{font-size:30px;border-width:0.5cm; border-color:pink; border-style:double dashed;}	
+.large_font{font-size:30px;font-family:Georgia}
+
+
+blockquote{font-family:cursive;font-size:25px;}
+
+address{color:black;font-size:25px;text-align: center;padding-bottom:1cm;padding-top:1cm}	
+.transbox2{background-color: rgb(250,220,230);font-weight:800 ;opacity: 0.8;margin:50px 50px}
+
+/*make box for contact css*/
+.box {text-align: center;padding-left:0.2cm}
+
+/*make margin for term*/
+.Term_margin{color:black;text-align: left;}
+
+/*contact setting for web*/
+#contact_setting {color:green;}
+/*id sector for term style*/
+#term_color{color:navy;text-align: center;}
+
+/*make float to left tag*/
+#make_float_left{float:left;margin:2cm;}
+#make_float_left2{float:left;margin:2cm}
+#make_float_left3{float:left;margin:2cm}
+#contact_float_left{float:left; width:10%}
+
+/*setting for all the link in the html*/
+.small_text a:link{font-size:15px;float:right;}
+.small_text a:hover{font-size: 120%; color:purple;}
+
+
+address a:hover {font-size: 150%; color:purple}
+
+/*link setting */
+a:link {color:blue;font-size:25px}
+a:visited{color:green}
+a:active{color:red}
+a:hover {font-size: 200%; color:purple}
+
+/*copyright style for all web*/	
+.copyright { position: absolute;
+        width: 100%;
+        color: solid black;
+        line-height: 40px;
+        font-size: 0.7em;
+        text-align: right;
+        bottom:0;}
+/*copyright style for special web*/	
+.copyright1 {display:block;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    background:#eee;
+    border:1px solid #ddd;
+	text-align:right;}

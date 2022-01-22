@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="AllCategory.xsl"?>
+<!--Assignment 2
+  SENG1050*/
+  NI ZENG*/
+  C3238805*/
+  CREATE: 30/10/2020*/
+  DUE 1/11/2020*-->
+<!DOCTYPE goholiday 
+[
+
+  <!ELEMENT goholiday (holidays*)>  
+  
+  <!ELEMENT holidays (cruise+)>
+  
+  <!ELEMENT cruise (packeage_name,description,cost,number_nights,popularity,Accommodation_Options+,location,additional_cost,coupon_code?,reviews*,picture+,url+,travel_date?,saved?)>
+  
+  <!ELEMENT packeage_name (#PCDATA)>  
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT cost (#PCDATA)>  
+  <!ELEMENT number_nights (#PCDATA )>
+  <!ELEMENT popularity (#PCDATA)>
+  
+  <!ELEMENT Accommodation_Options (#PCDATA)>
+  <!ELEMENT location (#PCDATA)>
+  <!ELEMENT additional_cost (#PCDATA)>
+  
+  
+  <!ELEMENT coupon_code (#PCDATA)>
+  <!ELEMENT reviews (#PCDATA)>  
+  <!ELEMENT picture (#PCDATA)>
+  <!ELEMENT url (#PCDATA)>
+  <!ATTLIST cruise link CDATA #IMPLIED>
+  
+  
+  <!ELEMENT travel_date (date,month,year)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT month (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+   
+  <!ELEMENT saved (#PCDATA)>   
+  <!ENTITY dollor "$">
+
+]>
+
+<goholiday>
+	<holidays>	
+		<cruise link="https://www.frommers.com/destinations/south-pacific">
+			<packeage_name>cruise packeage b1</packeage_name>
+			<description>south pacific</description>
+			<cost>$ 700</cost>
+			<number_nights>7</number_nights>
+			<popularity>3</popularity>
+			<Accommodation_Options>single suite</Accommodation_Options>
+			<location> level 8-20 </location>
+			<additional_cost>none</additional_cost>
+			<coupon_code>a001</coupon_code>
+			<reviews>good</reviews>
+			<picture>images/southpacific.jpg</picture>
+			
+			<url>https://www.flightcentre.com.au/product/12656327</url>
+			
+			<travel_date>
+				<date>30/</date>
+				<month>10/</month>
+				<year>2020</year>
+			</travel_date>
+			
+			<saved>&dollor;89</saved>	
+		</cruise>
+
+		<cruise link="https://www.pocruises.com.au/cruises/barrier-reef-discovery/x104#:~:text=We%20dedicate%20this%20itinerary%20to,with%20Australia%20all%20over%20again.">
+			<packeage_name>cruise packeage a2</packeage_name>
+			<description>barrier reef discovery</description>
+			<cost>$ 800</cost>
+			<number_nights>7</number_nights>
+			<popularity>4</popularity>
+			<Accommodation_Options>double suite</Accommodation_Options>
+			<location> level 60-108 </location>
+			<additional_cost>none</additional_cost>
+			<coupon_code>s552</coupon_code>
+			<reviews>very good</reviews>
+			<picture>images/barrier.jpg</picture>
+			
+			<url>https://www.pocruises.com.au/cruises/barrier-reef-discovery/x104#:~:text=We%20dedicate%20this%20itinerary%20to,with%20Australia%20all%20over%20again.</url>
+			
+			<travel_date>
+				<date>30/</date>
+				<month>10/</month>
+				<year>2020</year>
+			</travel_date>
+			
+			<saved>&dollor;103</saved>			
+		</cruise>
+		
+		<cruise link = "https://www.traveller.com.au/queensland">
+			<packeage_name>cruise packeage c3</packeage_name>
+			<description>queensland cruise</description>
+			<cost>$ 900</cost>
+			<number_nights>7</number_nights>
+			<popularity>3</popularity>
+			<Accommodation_Options>family suite</Accommodation_Options>
+			<location> level 108-200 </location>
+			<additional_cost>none</additional_cost>
+			<coupon_code>r004</coupon_code>
+			<reviews>good value</reviews>
+			<picture>images/queensland.jpg</picture>
+			
+			<url>https://www.flightcentre.com.au/product/9314691</url>
+			
+			<travel_date>
+				<date>30/</date>
+				<month>10/</month>
+				<year>2020</year>
+			</travel_date>
+			
+			<saved>&dollor;150</saved>			
+		</cruise>
+		
+	</holidays>
+</goholiday>
+

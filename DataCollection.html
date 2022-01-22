@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--Assignment 2
+  SENG1050*/
+  NI ZENG*/
+  C3238805*/
+  CREATE: 30/10/2020*/
+  DUE 1/11/2020*-->
+  
+  
+	<html lang="en">
+	   <head>   
+		<meta charset="UTF-8">
+		<title>Data Collection Page</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+		<style>
+			p {
+				font-family: georgia, serif; 
+				font-size: 20px;
+			}
+		</style>
+		
+		<script type="text/JavaScript">
+		 function checkName()
+		 {
+		 if (document.firstform.name.value == "") {
+		 alert("argh! Please provide your name.");
+		 return false;
+		 } else {		 
+		 return true;
+		 }
+		} /* checkName() */
+		
+		
+		
+		function Validate()
+		{
+		   var combo = document.getElementById("category");
+		   if(combo.selectedIndex <1)
+			{
+			
+			  alert("Please Select Valid Category for your Holiday.");
+			  return false;
+			}
+			else{return true;}
+			
+		}/* Validate() for Category */
+		
+		
+		function Agree()
+		{
+			var checkBox = document.getElementById("agree");
+		    if (checkBox.checked != true){
+			alert("Please agree with the terms and conditions ");
+			return false;
+			}
+			else{return true;}
+		}/* check Agree() */
+		
+		function ValidateEmail(mail) 
+		{
+		if (document.firstform.email.value == "") {
+			 alert("argh! Please enter your email.");
+			 return false;
+			 } else{			
+			return true;}
+		}/* ValidateEmail(mail) */
+
+			
+		</script> 
+		
+		
+	
+	   </head>
+
+	   <body>
+		
+		<section>
+		<header>
+		<h1>Go Holiday Data Collection</h1>
+		</header>
+		<nav>
+		  <a href="index.html"> home </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="terms.html"> Terms and conditions </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="Privacy_policy.html"> Privacy policy </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="Contact.html"> Contact us </a>	 <br> 
+		  <a href="goHoliday_luxury.xml"> Luxury packeage </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="goHoliday_cruise.xml"> Cruise packeage </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="Aboutus.html"> About us </a><br>
+		</nav>
+		
+		<fieldset>	
+			<legend style= "color:blue;font-size:20px">personal information </legend>			
+			<form action = "http://jkorpela.fi/cgi-bin/echo.cgi" method = "get" name="firstform" >
+			
+				<label for = "name">Name*: </label><br>
+				<input type="text" size="30" name="name" id="name" placeholder="eg.John Smith"  /><br><br>
+				
+				<label for = "email">Email*: </label><br>
+				<input type="text" size="30" name="email" id="email" placeholder="eg.YourOwn@email.com"/><br><br>
+				
+				<label for = "pre_sub">How many previous holidays have you submitted ? </label>&nbsp;&nbsp;
+				<input type="text" size="4" maxlength="3" name="pre_sub" id="pre_sub" placeholder="5"/> (times)<br>
+				
+				<label for = "been_holiday">have been on a holiday in the past 5 years ?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" size="10" maxlength="1" name="been_holiday" id="been_holiday" placeholder="y / n "/> (y=yes, n=no)<br>
+				
+				<label for = "where">Where did you hear about us ?</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" size="30" name="where" id="where" placeholder="eg. Online,friend,work"/> <br><br>
+				
+				<fieldset >
+					<legend style= "color:blue;font-size:20px">suggested holiday</legend>
+					<label for = "holiday_name">Name of the holiday: </label>
+					<input type="text" size="28" name="holiday_name" id="holiday_name" placeholder="eg.luxury packeage l2"  /><br>
+					
+					<label for = "category">Choose holiday category*:</label>
+					<select name="category" id="category" >
+						<option disabled selected value> -- select an option -- </option>
+						<option value="luxury"> luxury </option>
+						<option value="adventure"> adventure </option>						
+					</select><br>
+					
+					<label for = "description">Description: </label><br>
+					 <textarea name='description' id="description" rows= "10" cols= "50" placeholder="How would you descript the travel packeage ?" ></textarea><br><br>
+					 
+					
+					 <input type ="checkbox" name="price_included" value="price_included" id="price_included">
+					  <label for ="price_included">Accommodation Price Included</label><br>
+					  
+					 <input type ="checkbox" name="coupon" value="coupon" id="coupon">
+					 <label for ="coupon">Coupon Code is applied</label><br> 
+					 
+					 <input type ="checkbox" name="agree" value="agree" id="agree">
+					 <label for ="agree">I agree with the Terms and conditions*  </label>
+					 <div class="small_text"><a href="Terms.html">Terms and conditions</a></div>
+				</fieldset>
+				
+				
+				
+				<input type="submit" value="Click Here to Submit" onClick="return checkName(),Validate(),Agree(),ValidateEmail(email) ;" />
+				<input type="reset" value = "Resert"/>
+			
+			</form>
+		</fieldset>
+			
+			<p>Click on the submit button, and the input will
+			be sent. </p>
+
+		<footer>
+		<!--CopyRight info -->
+		<div class = "copyright">	
+		<span>&#169;2020 Ni Zeng. All Rights Reserved.</span>
+		</div>	
+		</footer>
+			
+			
+								
+		</section>
+		
+		
+	   </body>
+
+	</html>

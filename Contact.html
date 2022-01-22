@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!--Assignment 2
+  SENG1050*/
+  NI ZENG*/
+  C3238805*/
+  CREATE: 30/10/2020*/
+  DUE 1/11/2020*-->
+	<html lang="en">
+	   <head>   
+		<meta charset="UTF-8">
+		<title>Contact Go Holiday</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+		
+		<style>
+			p {
+				font-family: georgia, serif; 
+				font-size: 20px;
+			}
+		</style>
+		
+		<script type="text/JavaScript">
+		 function checkinput()	
+		 {
+		 if (document.contact_form.name.value == "" || document.contact_form.telephone.value == "" ) 
+		 {
+		 alert("argh! Please provide your name and Telephone.");
+		 return false;
+		 		
+		 } else 
+		 {
+		 alert("Thank you, "+ document.contact_form.name.value + ".");		 
+		 return true;
+		 }
+		 	 
+		} /* checkinput() */
+		</script> 
+				
+	   </head>
+
+	   <body>
+		
+		<section>
+		<header>
+		<h1>Contact us</h1>
+		</header>
+		<nav>
+		  <a href="index.html"> home </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="terms.html"> Terms and conditions </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="Privacy_policy.html"> Privacy policy </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="DataCollection.html"> Data Collection </a>	 <br> 
+		  <a href="goHoliday_luxury.xml"> Luxury packeage </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="goHoliday_cruise.xml"> Cruise packeage </a>&nbsp;&nbsp;&nbsp;&nbsp;
+		  <a href="Aboutus.html"> About us </a><br>
+		</nav>
+		
+			<aside>
+			<h2 style = "color:red"> Need Help? </h2>
+			<p>please contact us by enter your email,telephone and message below.Or you can mail to us. </p><br>
+			<p>Address : University Dr, Callaghan NSW 2308 </p>
+			</aside>
+		
+			<article>
+			<header>
+			<h2>Feel Free To Ask. </h2>
+			<p>(Submit information below.)</p>
+			</header>
+			
+			
+			<form name="contact_form">
+			<fieldset>
+			 Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" size="25" name="name" id="name"/><br><br>
+			
+			Telephone:
+			<input type="text" size="25" name="telephone" id="telephone"/><br><br>
+						
+			<textarea rows="15" cols="30" name="message" placeholder = "Please put any of your questions here."></textarea>
+			
+			<br>
+			<input type="reset" value="reset">
+			<input type="submit" value="Click Here to Submit" onClick="return checkinput(); ">
+			</fieldset>
+			</form>
+			
+			<p>Click on the submit button, and the input will
+			be sent. </p>
+
+			</article>
+			
+			<footer>
+			<div class = "copyright">	
+			<span>&#169;2020 Ni Zeng. All Rights Reserved.</span>
+			</div>
+			</footer>
+								
+		</section>
+		
+		
+	   </body>
+
+	</html>

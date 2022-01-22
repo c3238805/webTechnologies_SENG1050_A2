@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="AllCategory.xsl"?>
+<!--Assignment 2
+  SENG1050*/
+  NI ZENG*/
+  C3238805*/
+  CREATE: 30/10/2020*/
+  DUE 1/11/2020*-->
+  
+<!DOCTYPE goholiday 
+[
+  <!ELEMENT goholiday (holidays*)>  
+  
+  <!ELEMENT holidays (luxury+)>
+  
+  <!ELEMENT luxury (packeage_name,description,cost,number_nights,popularity,Accommodation_Options+,location,additional_cost,coupon_code?,reviews*,picture+,url+,travel_date?,saved?)>
+  
+  <!ELEMENT packeage_name (#PCDATA)>  
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT cost (#PCDATA)>  
+  <!ELEMENT number_nights (#PCDATA )>
+  <!ELEMENT popularity (#PCDATA)>
+  
+  <!ELEMENT Accommodation_Options (#PCDATA)>
+  <!ELEMENT location (#PCDATA)>
+  <!ELEMENT additional_cost (#PCDATA)>
+  
+  
+  <!ELEMENT coupon_code (#PCDATA)>
+  <!ELEMENT reviews (#PCDATA)>  
+  <!ELEMENT picture (#PCDATA)>
+  <!ELEMENT url (#PCDATA)>
+  <!ATTLIST luxury link CDATA #IMPLIED>
+  
+  <!ELEMENT travel_date (date,month,year)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT month (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+   
+  <!ELEMENT saved (#PCDATA)>   
+  <!ENTITY dollor "$">
+
+]>
+
+<goholiday>
+	<holidays>	
+		<luxury link = "https://www.travelchinaguide.com/cityguides">
+			<packeage_name>luxury packeage l1</packeage_name>
+			<description>china</description>
+			<cost>$ 20,000</cost>
+			<number_nights>5</number_nights>
+			<popularity>5</popularity>
+			<Accommodation_Options>5 star hotel</Accommodation_Options>
+			<location> China </location>
+			<additional_cost>none</additional_cost>
+			<coupon_code>C003</coupon_code>
+			<reviews>GOOD</reviews>
+			<picture>images/china01.jpg</picture>
+			
+			<url>https://www.chinahighlights.com/travelguide</url>
+			
+			<travel_date>
+				<date>27/</date>
+				<month>09/</month>
+				<year>2020</year>
+			</travel_date>
+			
+			<saved>&dollor;55</saved>			
+		</luxury>
+
+		<luxury link ="https://theblondeabroad.com/ultimate-singapore-travel-guide">
+			<packeage_name>luxury packeage l2</packeage_name>
+			<description>singapore</description>
+			<cost>$ 20,000</cost>
+			<number_nights>5</number_nights>
+			<popularity>5</popularity>
+			<Accommodation_Options>5 star hotel</Accommodation_Options>
+			<location> singapore </location>
+			<additional_cost>none</additional_cost>
+			<coupon_code>C001</coupon_code>
+			<reviews>VERY GOOD</reviews>
+			<picture>images/singapore01.jpg</picture>
+			
+			<url>https://theblondeabroad.com/ultimate-singapore-travel-guide</url>
+			
+			<travel_date>
+				<date>27/</date>
+				<month>07/</month>
+				<year>2020</year>
+			</travel_date>
+			
+			<saved>&dollor;45</saved>			
+		</luxury>
+		
+		<luxury link = "https://www.roughguides.com/destinations/europe/france">
+			<packeage_name>luxury packeage l3</packeage_name>
+			<description>france</description>
+			<cost>$ 20,000</cost>
+			<number_nights>5</number_nights>
+			<popularity>5</popularity>
+			<Accommodation_Options>5 star hotel</Accommodation_Options>
+			<location> france </location>
+			<additional_cost>none</additional_cost>
+			<coupon_code>C002</coupon_code>
+			<reviews>GOOD</reviews>
+			<picture>images/france01.jpg</picture>
+			
+			<url>https://www.roughguides.com/destinations/europe/france</url>
+			
+			<travel_date>
+				<date>27/</date>
+				<month>08/</month>
+				<year>2020</year>
+			</travel_date>
+			
+			<saved>&dollor;109</saved>			
+		</luxury>
+		
+	</holidays>
+</goholiday>
+
+
